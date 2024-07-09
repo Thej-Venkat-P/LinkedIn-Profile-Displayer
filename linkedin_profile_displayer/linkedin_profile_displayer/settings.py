@@ -55,7 +55,10 @@ ROOT_URLCONF = "linkedin_profile_displayer.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [r"C:\Users\Thej Venkat\Desktop\Projects\LinkedIn Profile Displayer\linkedin_profile_displayer\templates"],
+        "DIRS": [
+            r"C:\Users\Thej Venkat\Desktop\Projects\LinkedIn Profile Displayer\linkedin_profile_displayer\templates",
+            r"C:\Users\vthar\Desktop\ex\fsd_proj\LinkedIn-Profile-Displayer\linkedin_profile_displayer\templates"
+        ],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
