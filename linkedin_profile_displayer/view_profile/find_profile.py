@@ -1,12 +1,11 @@
 from time import sleep
-
+# ExPass#@123
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 # Data from Profile Page:
 # Required data: Name, Tag Line, Profile Image, About, Languages, Experience, Education, Skills, Recommendations, Accomplishments, Interests
 # Available Data: Name, Tag Line, Profile Image, About, Languages, Experience, Education, Certifications, Projects
-# ExPass#@123
 # Open the profile page
 def open_profile_page(url):
     driver.get(url)
