@@ -41,7 +41,7 @@ def recruiter_logout(request):
     driver.quit()
     driver = None
     options = None
-    return render(request, 'recruiter_login.html')
+    return render(request, 'recruiter_logout.html')
 
 def home(request):
     return render(request, 'home.html')
