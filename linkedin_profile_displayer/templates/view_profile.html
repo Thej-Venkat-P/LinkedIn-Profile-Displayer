@@ -92,26 +92,26 @@
             </ul>
         </div>
         <div class="section">
-            <h3>Experience</h3>
-            <ul>
-                {% for experience in profile.experience %}
-                <li>{{ experience }}</li>
-                {% endfor %}
-            </ul>
-        </div>
-        <div class="section">
             <h3>Education</h3>
             <ul>
                 {% for education in profile.education %}
-                <li>{{ education }}</li>
+                <li>
+                    {% for line in education %}
+                    <p>{{ line }}</p>
+                    {% endfor %}
+                </li>
                 {% endfor %}
             </ul>
         </div>
         <div class="section">
-            <h3>Certifications</h3>
+            <h3>Experience</h3>
             <ul>
-                {% for certification in profile.certifications %}
-                <li>{{ certification }}</li>
+                {% for experience in profile.experience %}
+                <li>
+                    {% for line in experience %}
+                    <p>{{ line }}</p>
+                    {% endfor %}
+                </li>
                 {% endfor %}
             </ul>
         </div>
@@ -119,10 +119,33 @@
             <h3>Projects</h3>
             <ul>
                 {% for project in profile.projects %}
-                <li>{{ project }}</li>
+                <li>
+                    {% for line in project %}
+                    <p>{{ line }}</p>
+                    {% endfor %}
+                </li>
                 {% endfor %}
             </ul>
         </div>
+        <div class="section">
+            <h3>Certifications</h3>
+            <ul>
+                {% for certification in profile.certifications %}
+                <li>
+                    {% for line in certification %}
+                    <p>{{ line }}</p>
+                    {% endfor %}
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="section">
+            <h3>Skills</h3>
+            <ul>
+                {% for skill in profile.skills %}
+                <li>{{ skill }}</li>
+                {% endfor %}
+            </ul>
     </div>
 </body>
 </html>

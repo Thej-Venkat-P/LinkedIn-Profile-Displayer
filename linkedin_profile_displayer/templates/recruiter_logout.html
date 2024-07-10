@@ -3,13 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recruiter Logout</title>
+    <title>Recruiter Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+
+        .login-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #007bff;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #777;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <div class="logout-container">
+    <div class="login-container">
         <h1>LinkedIn Logout</h1>
-        <p>{{ message }}</p>
-        <p>You have been successfully logged out from LinkedIn.</p>
+        <p>Successfully logged out.</p>
+    </div>
+    <div class="back-button">
+        <!-- Button to go back to home page from login page -->
+            <a href="../">Back</a>
     </div>
 </body>
 </html>

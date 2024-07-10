@@ -38,7 +38,10 @@ def recruiter_login(request):
 
 def recruiter_logout(request):
     global driver, options
-    driver.quit()
+    try:
+        driver.quit()
+    except:
+        pass
     driver = None
     options = None
     return render(request, 'recruiter_logout.html')

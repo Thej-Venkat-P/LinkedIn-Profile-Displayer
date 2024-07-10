@@ -2,15 +2,18 @@ from time import sleep
 # ExPass#@123
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
 
 # Data from Profile Page:
 # Required data: Name, Tag Line, Profile Image, About, Languages, Experience, Education, Skills, Recommendations, Accomplishments, Interests
 # Available Data: Name, Tag Line, Profile Image, About, Languages, Experience, Education, Certifications, Projects
+
 # Open the profile page
 def open_profile_page(url):
     driver.get(url)
+    sleep(3)
     print("\nOpened Profile Page")
-    close_popup()
+    # close_popup()
 
 # Close the login popup
 def close_popup():
@@ -27,7 +30,7 @@ def close_popup():
 # Name
 def find_name():
     try:
-        name = driver.find_element(By.CLASS_NAME, 'top-card-layout__title').text
+        name = driver.find_element(By.CLASS_NAME, 'text-heading-xlarge').text
         return name
     except:
         return None
@@ -35,7 +38,7 @@ def find_name():
 # Tag Line
 def find_tag_line():
     try:
-        tag_line = driver.find_element(By.CLASS_NAME, 'top-card-layout__headline').text
+        tag_line = driver.find_element(By.XPATH, '//*[@id="profile-content"]/div/div[2]/div/div/main/section[1]/div[2]/div[2]/div[1]/div[2]').text
         return tag_line
     except:
         return None
@@ -43,7 +46,7 @@ def find_tag_line():
 # Profile Image
 def find_profile_image():
     try:
-        profile_image = driver.find_element(By.CLASS_NAME, 'top-card__profile-image').get_attribute('src')
+        profile_image = driver.find_element(By.CLASS_NAME, 'pv-top-card-profile-picture__image--show').get_attribute('src')
         return profile_image
     except:
         return None
@@ -51,73 +54,95 @@ def find_profile_image():
 # About
 def find_about():
     try:
-        about = driver.find_element(By.CLASS_NAME, 'core-section-container__content').text
+        about = driver.find_element(By.XPATH, '//*[@id="profile-content"]/div/div[2]/div/div/main/section[2]/div[3]/div/div/div/span[1]').text
         return about
     except:
         return None
-
+    
 # Location
 def find_location():
     try:
-        location = driver.find_element(By.CLASS_NAME, 'not-first-middot').text
-        return location[: -13].split(', ')
+        location = driver.find_element(By.XPATH, '//*[@id="profile-content"]/div/div[2]/div/div/main/section[1]/div[2]/div[2]/div[2]/span[1]').text
+        return location.split(', ')
+        
     except:
         return None
 
 # Languages
 def find_languages():
     try:
-        languages = driver.find_element(By.CLASS_NAME, 'languages').text.split('\n')[1:]
-        languages = [(languages[i], languages[i+1]) for i in range(0, len(languages), 2)]
+        driver.get(url+'/details/languages/')
+        # driver.find_element_by_tag_name('body').send_keys(Keys.END)
+        sleep(2)
+        languages = driver.find_elements(By.CLASS_NAME, 'pvs-list__paged-list-item')
+        languages = [elem.text.split('\n')[::2] for elem in languages]
         return languages
+        
     except:
         return None
 
 # Experience
 def find_experience():
     try:
-        experience_list = driver.find_element(By.CLASS_NAME, 'experience__list')
-        # For each li in experience_list, get the data
-        experience_list = experience_list.find_elements(By.TAG_NAME, 'li')
-        experience_list = [exp.text for exp in experience_list]
-        for i in range(len(experience_list)):
-            experience_list[i] = experience_list[i].strip('Show more')
-        return experience_list
+        driver.get(url+'/details/experience/')
+        # driver.find_element_by_tag_name('body').send_keys(Keys.END)
+        sleep(2)
+        experience = driver.find_elements(By.CLASS_NAME, 'pvs-list__paged-list-item')
+        experience = [elem.text.split('\n')[::2] for elem in experience]
+        return experience
     except:
         return None
 
 # Education
 def find_education():
     try:
-        education_list = driver.find_element(By.CLASS_NAME, 'education__list')
-        # For each li in education_list, get the data
-        education_list = education_list.find_elements(By.TAG_NAME, 'li')
-        education_list = [edu.text for edu in education_list]
-        for i in range(len(education_list)):
-            education_list[i] = education_list[i].strip('Show more')
-        return education_list
+        driver.get(url+'/details/education/')
+        # driver.find_element_by_tag_name('body').send_keys(Keys.END)
+        sleep(2)
+        education = driver.find_elements(By.CLASS_NAME, 'pvs-list__paged-list-item')
+        education = [elem.text.split('\n')[::2] for elem in education]
+        return education
     except:
         return None
 
 # Certifications
 def find_certifications():
     try:
-        certifications_list = driver.find_element(By.CLASS_NAME, 'certifications')
-        # For each li in certifications_list, get the data
-        certifications_list = certifications_list.find_elements(By.TAG_NAME, 'li')
-        certifications_list = [cert.text for cert in certifications_list]
-        return certifications_list
+        driver.get(url+'/details/certifications/')
+        # driver.find_element_by_tag_name('body').send_keys(Keys.END)
+        sleep(2)
+        certifications = driver.find_elements(By.CLASS_NAME, 'pvs-list__paged-list-item')
+        certifications = [elem.text.split('\n')[::2] for elem in certifications]
+        return certifications
     except:
         return None
 
 # Projects
 def find_projects():
     try:
-        projects_list = driver.find_element(By.CLASS_NAME, 'projects')
-        # For each li in projects_list, get the data
-        projects_list = projects_list.find_elements(By.TAG_NAME, 'li')
-        projects_list = [proj.text for proj in projects_list]
-        return projects_list
+        driver.get(url+'/details/projects/')
+        # driver.find_element_by_tag_name('body').send_keys(Keys.END)
+        sleep(2)
+        projects = driver.find_elements(By.CLASS_NAME, 'pvs-list__paged-list-item')
+        projects = [elem.text.split('\n')[::2] for elem in projects]
+        return projects 
+    except:
+        return None
+
+def find_skills():
+    try:
+        driver.get(url+'/details/skills/')
+        # driver.find_element_by_tag_name('body').send_keys(Keys.END)
+        driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+        sleep(5)
+        skills = driver.find_elements(By.CLASS_NAME, 'pvs-list__paged-list-item')
+        skills = [elem.text.split('\n')[0] for elem in skills]
+        temp = []
+        for elem in skills:
+            if elem:
+                temp.append(elem)
+        skills = temp
+        return skills
     except:
         return None
 
@@ -125,8 +150,9 @@ def find_projects():
 def close_driver():
     driver.quit()
 
-def get_all_data(url, open_driver=None):
-    global driver, options
+def get_all_data(curr_url, open_driver=None):
+    global driver, options, url
+    url = curr_url
     if not open_driver:
         options = webdriver.ChromeOptions()
         # options.add_argument('--headless')
@@ -152,7 +178,7 @@ def get_all_data(url, open_driver=None):
     education = find_education()
     certifications = find_certifications()
     projects = find_projects()
-
+    skills = find_skills()
     # close_driver()
 
     profile = {
@@ -166,13 +192,14 @@ def get_all_data(url, open_driver=None):
         "experience": experience,
         "education": education,
         "certifications": certifications,
-        "projects": projects
+        "projects": projects,
+        "skills": skills
     }
     print(profile)
     return profile
 
 if __name__ == '__main__':
-    url = 'https://www.linkedin.com/in/thej-venkat-purru-9941a6255/'
+    url = 'https://www.linkedin.com/in/thej-venkat-purru-9941a6255'
 
     options = webdriver.ChromeOptions()
     # options.add_argument('--headless')
@@ -184,9 +211,11 @@ if __name__ == '__main__':
     options.add_argument('--disable-logging')
 
     driver = webdriver.Chrome(options=options)
-    
+    driver.get("https://www.linkedin.com/login")
+    cont = input("Input")
     open_profile_page(url)
-    
+    sleep(5)
+
     print()
     print("Data from Profile Page:")
     print()
@@ -249,6 +278,12 @@ if __name__ == '__main__':
     projects = find_projects()
     print(projects)
 
+    print()
+    
+    print("Skills:")
+    skills = find_skills()
+    print(skills)
+    
     print()
 
     end = input("Press Enter to Exit\n")

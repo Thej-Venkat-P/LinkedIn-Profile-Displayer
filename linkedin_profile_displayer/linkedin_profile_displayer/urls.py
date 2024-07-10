@@ -20,6 +20,7 @@ from view_profile.views import recruiter_login, recruiter_logout, home
 
 urlpatterns = [
     path("", home),
+    path("home/", home),
     path("admin/", admin.site.urls),
     path("profile/", include("view_profile.urls")),
     path("login/", recruiter_login),
