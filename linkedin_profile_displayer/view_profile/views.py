@@ -2,6 +2,8 @@ from django.shortcuts import render
 from .find_profile import get_all_data
 from selenium import webdriver
 from selenium.webdriver.remote.command import Command
+from django.shortcuts import redirect
+from .forms import ProfileForm
 
 def view_profile(request, url):
     url = 'https://www.linkedin.com/in/' + url
@@ -48,3 +50,13 @@ def recruiter_logout(request):
 
 def home(request):
     return render(request, 'home.html')
+
+def profile_input(request):
+    if request.method == 'POST':
+        form = ProfileForm(request.POST)
+        if form.is_valid():
+            url = form.cleaned_data['url'].split('/')[-1]
+            return redirect('profile_view', url=url)
+    else:
+        form = ProfileForm()
+    return render(request, 'profile_input.html', {'form': form})
