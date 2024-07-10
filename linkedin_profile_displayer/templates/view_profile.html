@@ -86,7 +86,7 @@
         <div class="section">
             <h3>Languages</h3>
             <ul>
-                {% for language, proficiency in profile.languages %}
+                {% for language in profile.languages %}
                 <li><strong>{{ language }}</strong> - {{ proficiency }}</li>
                 {% endfor %}
             </ul>
