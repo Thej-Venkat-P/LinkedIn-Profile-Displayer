@@ -1,0 +1,307 @@
+{
+  "url": "https://www.linkedin.com/in/thej-venkat-purru-9941a6255",
+  "name": "Thej Venkat Purru",
+  "tagline": "Student at Dayananda Sagar Academy of Technology and Management | Data Science Aspirant | Skilled in Python, SQL | Artificial Intelligence Enthusiast | 5-Stars Python Hacker Rank",
+  "profile_image": "https://media.licdn.com/dms/image/D5635AQGC9C6y62gOAQ/profile-framedphoto-shrink_200_200/0/1719145201783?e=1721260800&v=beta&t=gPWio1G73edBZ9sfrLFGkltxQFtyiLNJYlvo6prOiBY",
+  "about": "I am a passionate and creative student aspiring to become an AI Engineer, who loves to solve problems and create engaging experiences. I will acquire bachelor\u2019s degree in computer science and am currently gaining experience in developing applications and services using various programming languages and tools. I am also interested in Data Science and have worked on several projects related to it. I enjoy learning new skills and technologies and collaborating with other developers, artists and designers. My goal is to become a successful AI Engineer and contribute to the society in a meaningful way through AI.\n\nPlease visit my GitHub page to view my Projects and Works: https://github.com/Thej-Venkat-P",
+  "location": ["Bengaluru", "Karnataka", "India"],
+  "languages": [
+    ["English", "Native or bilingual proficiency"],
+    ["Hindi", "Professional working proficiency"],
+    ["Kannada", "Professional working proficiency"],
+    ["Telugu", "Native or bilingual proficiency"]
+  ],
+  "experience": [
+    [
+      "Data Science Intern",
+      "Prodigy InfoTech \u00b7 Internship",
+      "Dec 2023 - Jan 2024 \u00b7 2 mos",
+      "I am excited to announce that I have started my data science internship at Prodigy InfoTech. During my internship, I will be working on various data analysis and machine learning tasks. Prodigy InfoTech has provided me with the freedom to explore and learn, which encourages creativity and problem-solving.",
+      "I am excited to announce that I have started my data science internship at Prodigy InfoTech. During my internship, I will be working on various data analysis and machine learning tasks. Prodigy InfoTech has provided me with the freedom to explore and learn, which encourages creativity and problem-solving. I am looking forward to this opportunity to learn and grow in this ever-evolving field.",
+      "Skills:Python (Programming Language) \u00b7 Data Science \u00b7 Problem Solving \u00b7 Programming \u00b7 Machine Learning \u00b7 Exploratory Data Analysis",
+      "ProdigyInfotechLoR.pdf",
+      "ProdigyInfotechCertificate.pdf"
+    ],
+    [
+      "Artificial Intelligence Intern",
+      "CodSoft \u00b7 Internship",
+      "Nov 2023 - Dec 2023 \u00b7 2 mos",
+      "Remote",
+      "I Worked as an AI Intern at Codsoft. During my internship, I had the opportunity to work on cutting-edge AI technologies and contribute to real-world projects.",
+      "I gained invaluable insights into AI project management and problem-solving strategies. This experience has significantly enhanced my understanding of AI and its practical applications.",
+      "",
+      "I Worked as an AI Intern at Codsoft. During my internship, I had the opportunity to work on cutting-edge AI technologies and contribute to real-world projects. My role involved developing machine learning models, data preprocessing, and implementing AI solutions. I gained invaluable insights into AI project management and problem-solving strategies. This experience has significantly enhanced my understanding of AI and its practical applications. I'm grateful for the opportunity to learn and grow at Codsoft and look forward to applying these skills in my future endeavors. GitHub link : https://github.com/Thej-Venkat-P/CodSoft",
+      "Skills:Python (Programming Language) \u00b7 Data Preparation \u00b7 Artificial Intelligence (AI) \u00b7 Project Management \u00b7 Programming \u00b7 Machine Learning",
+      "CodsoftAIInternship.pdf"
+    ]
+  ],
+  "education": [
+    [
+      "DAYANANDA SAGAR ACADEMY OF TECHNOLOGY AND MANAGEMENT, BANGALORE",
+      "Bachelor of Engineering - BE, Computer Science",
+      "Dec 2021 - Jun 2025",
+      "Activities and societies: Coding Competitions",
+      "I participated in Coding competitions like Algosphere.",
+      "I have indulged myself in working in many projects and mini-projects.",
+      "Skills: Java \u00b7 Project Management \u00b7 Algorithm Design \u00b7 Python (Programming Language) \u00b7 Project Planning"
+    ],
+    [
+      "BGS National Public School - India",
+      "High School Diploma, High School/Secondary Diplomas and Certificates",
+      "Jun 2007 - Oct 2021",
+      "Grade: 12 th",
+      "Activities and societies: Coding competitions, Robotics club",
+      "I have participated in multiple coding competitions and have placed a high rank in few of them.",
+      "I have participated in multiple coding competitions and have placed a high rank in few of them. I have also been a part of the Robotics club."
+    ]
+  ],
+  "certifications": [
+    [
+      "Life Expectancy Prediction Using Machine Learning",
+      "Coursera",
+      "Issued Apr 2024",
+      "Credential ID 3C9FYY2B6V24",
+      "Show credential",
+      "Skills:Data Science \u00b7 Machine Learning \u00b7 Python (Programming Language)",
+      "Coursera Guided Project - Life Expectancy Prediction"
+    ],
+    [
+      "Applied Data Science Capstone",
+      "IBM",
+      "Issued Mar 2024",
+      "Credential ID JZW2KSBGZFP6",
+      "Show credential",
+      "Skills:Data Science \u00b7 Data Visualization \u00b7 Web Scraping \u00b7 Python (Programming Language) \u00b7 Machine Learning",
+      "Applied Data Science Capstone"
+    ],
+    [
+      "Applied Data Science Specialization",
+      "IBM",
+      "Issued Mar 2024",
+      "Credential ID RES5D2TEVJWN",
+      "Show credential",
+      "Skills:Python (Programming Language) \u00b7 Data Science \u00b7 Data Visualization \u00b7 Machine Learning \u00b7 Web Scraping",
+      "Applied Data Science"
+    ],
+    [
+      "DBMS Course - Master the Fundamentals and Advanced Concepts",
+      "Scaler",
+      "Issued Mar 2024",
+      "Show credential",
+      "Skills:DBMS \u00b7 SQL \u00b7 Computer Science",
+      "DBMS Course - Master the Fundamentals and Advanced Concepts"
+    ],
+    [
+      "Data Analysis with Python",
+      "IBM",
+      "Issued Mar 2024",
+      "Credential ID ZBK523K4QWQ9",
+      "Show credential",
+      "Skills:Data Science \u00b7 Data Preparation \u00b7 Data Visualization \u00b7 Exploratory Data Analysis \u00b7 Python (Programming Language)",
+      "Data Analysis with Python"
+    ],
+    [
+      "Data Visualization with Python",
+      "IBM",
+      "Issued Mar 2024",
+      "Credential ID 9R3HXDJKMRXG",
+      "Show credential",
+      "Skills:Data Science \u00b7 Data Visualization \u00b7 Python (Programming Language)",
+      "Data Visualization with Python"
+    ],
+    [
+      "Google Cybersecurity Specialization",
+      "Google",
+      "Issued Mar 2024",
+      "Credential ID TJD7XVVKUWQA",
+      "Show credential",
+      "Skills:Cybersecurity \u00b7 Python (Programming Language) \u00b7 Computer Science \u00b7 SQL \u00b7 Linux \u00b7 Risk Management \u00b7 Risk Assessment \u00b7 Incident Response",
+      "Google Cybersecurity Specialization"
+    ],
+    [
+      "IBM Data Science Specialization",
+      "IBM",
+      "Issued Mar 2024",
+      "Credential ID SKYX9DGZMKBS",
+      "Show credential",
+      "Skills:Data Science \u00b7 Web Scraping \u00b7 SQL \u00b7 Data Visualization \u00b7 Machine Learning \u00b7 Machine Learning Algorithms",
+      "IBM Data Science"
+    ],
+    [
+      "Machine Learning with Python (with Honors)",
+      "IBM",
+      "Issued Mar 2024",
+      "Credential ID L5XBDVTQPGY6",
+      "Show credential",
+      "Skills:Data Science \u00b7 Machine Learning \u00b7 Machine Learning Algorithms \u00b7 Artificial Intelligence (AI) \u00b7 Python (Programming Language) \u00b7 Data Preparation",
+      "Machine Learning with Python (with Honors)"
+    ],
+    [
+      "Unsupervised Machine Learning with K-Means",
+      "Great Learning",
+      "Issued Mar 2024",
+      "Show credential",
+      "Skills:Machine Learning \u00b7 Machine Learning Algorithms \u00b7 Data Science",
+      "Unsupervised Machine Learning with K-Means"
+    ],
+    [
+      "Assets, Threats, and Vulnerabilities",
+      "Google",
+      "Issued Feb 2024",
+      "Credential ID XHTYERGGBCR7",
+      "Show credential",
+      "Skills:Cybersecurity \u00b7 Computer Science",
+      "Assets, Threats and Vulnerabilities"
+    ],
+    [
+      "Automate Cybersecurity Tasks with Python",
+      "Google",
+      "Issued Feb 2024",
+      "Credential ID JJPVFDB3P4H6",
+      "Show credential",
+      "Skills:Python (Programming Language) \u00b7 Cybersecurity \u00b7 Computer Science",
+      "Automate Cybersecurity Tasks with Python"
+    ],
+    [
+      "Data Visualization using Python",
+      "Great Learning",
+      "Issued Feb 2024",
+      "Show credential",
+      "Skills:Python (Programming Language) \u00b7 Data Science \u00b7 Data Visualization",
+      "Data Visualization using Python"
+    ],
+    [
+      "Introduction to Machine Learning",
+      "Great Learning",
+      "Issued Feb 2024",
+      "Show credential",
+      "Skills:Machine Learning \u00b7 Data Science \u00b7 Artificial Intelligence (AI)",
+      "Introduction to Machine Learning"
+    ],
+    [
+      "Linear Regression vs Logistic Regression",
+      "Great Learning",
+      "Issued Feb 2024",
+      "Show credential",
+      "Skills:Machine Learning \u00b7 Machine Learning Algorithms \u00b7 Data Science",
+      "Linear Regression vs Logistic Regression"
+    ],
+    [
+      "Put It to Work: Prepare for Cybersecurity Jobs",
+      "Google",
+      "Issued Feb 2024",
+      "Credential ID J456W85W9QFC",
+      "Show credential",
+      "Skills:Cybersecurity \u00b7 Computer Science",
+      "Put It to Work: Prepare for Cybersecurity Jobs"
+    ],
+    [
+      "Sound the Alarm: Detection and Response",
+      "Google",
+      "Issued Feb 2024",
+      "Credential ID W6W9SBHAZYXD",
+      "Show credential",
+      "Skills:Computer Science \u00b7 Cybersecurity",
+      "Sound the Alarm: Detection and Response"
+    ],
+    [
+      "Support Vector Machines",
+      "Great Learning",
+      "Issued Feb 2024",
+      "Show credential",
+      "Skills:Machine Learning Algorithms \u00b7 Machine Learning \u00b7 Artificial Intelligence (AI) \u00b7 Python (Programming Language) \u00b7 Data Science",
+      "Support Vector Machines"
+    ],
+    [
+      "Connect and Protect: Networks and Network Security",
+      "Google",
+      "Issued Jan 2024",
+      "Credential ID ZFM66UVKAXBE",
+      "Show credential",
+      "Skills:Cybersecurity \u00b7 Computer Science",
+      "Connect and Protect: Networks and Network Security"
+    ],
+    [
+      "Data Science",
+      "Prodigy InfoTech",
+      "Issued Jan 2024",
+      "Credential ID PIT/DEC23/3447",
+      "Show credential",
+      "Skills:Machine Learning \u00b7 Python (Programming Language) \u00b7 Data Science \u00b7 Internship \u00b7 Project Management",
+      "ProdigyInfotechCertificate.pdf"
+    ]
+  ],
+  "projects": [
+    [
+      "Spam Message and URL Checker",
+      "Nov 2023 - Nov 2023",
+      "Checks for spam Messages and Dangerous URLs in the Message using Machine Learning Algorithm.",
+      "Checks for spam Messages and Dangerous URLs in the Message using Machine Learning Algorithm. Github link : https://github.com/Thej-Venkat-P/Spam-Message-Checker",
+      "Skills:Machine Learning \u00b7 GitHub \u00b7 Machine Learning Algorithms \u00b7 Cybersecurity \u00b7 Artificial Intelligence (AI) \u00b7 Computer Science \u00b7 Web Scraping \u00b7 Python (Programming Language)",
+      "ss1.jpg",
+      "ss2.jpg",
+      "ss3.jpg"
+    ],
+    [
+      "Tic Tac Toe AI",
+      "Nov 2023 - Nov 2023",
+      "A Simple Tic-Tac-Toe game implemented in Python but the Opponent is an Unbeatable Bot.",
+      "A Simple Tic-Tac-Toe game implemented in Python but the Opponent is an Unbeatable Bot. Github Link : https://github.com/Thej-Venkat-P/CodSoft/tree/main/Task%202%20Tic%20Tac%20Toe%20AI",
+      "Skills:Programming \u00b7 Game Theory \u00b7 Game Programming \u00b7 Artificial Intelligence (AI) \u00b7 Computer Science \u00b7 Python (Programming Language)",
+      "TicTacToeAI.jpg"
+    ],
+    [
+      "WebCrawler",
+      "Nov 2023 - Nov 2023",
+      "A WebCrawler that keeps track of all the websites visited and shows all the websites that can be visited through the current Website.",
+      "A WebCrawler that keeps track of all the websites visited and shows all the websites that can be visited through the current Website. Github Link : https://github.com/Thej-Venkat-P/Webcrawler",
+      "Skills:Programming \u00b7 Project Management \u00b7 Computer Science \u00b7 Web Scraping \u00b7 Python (Programming Language)",
+      "OutputScreenshot2.jpg",
+      "Webcrawler Output Screenshot 2",
+      "OuputScreenshot1.jpg",
+      "Webcrawler Output 1"
+    ]
+  ],
+  "skills": [
+    "DBMS",
+    "Linux",
+    "Risk Management",
+    "Risk Assessment",
+    "Incident Response",
+    "Data Visualization",
+    "Pandas",
+    "NumPy",
+    "Matplotlib",
+    "Seaborn",
+    "SQL",
+    "Databases",
+    "Leadership",
+    "Teamwork",
+    "Strategic Planning",
+    "SWOT analysis",
+    "Exploratory Data Analysis",
+    "Internship",
+    "JavaScript",
+    "Algorithms",
+    "Data Structures",
+    "Problem Solving",
+    "Data Science",
+    "Data Preparation",
+    "Machine Learning Algorithms",
+    "Artificial Intelligence (AI)",
+    "Computer Science",
+    "Programming",
+    "Machine Learning",
+    "Cybersecurity",
+    "GitHub",
+    "Game Theory",
+    "Game Programming",
+    "Web Scraping",
+    "C++",
+    "C#",
+    "Python (Programming Language)",
+    "Java",
+    "Algorithm Design",
+    "Project Planning"
+  ]
+}

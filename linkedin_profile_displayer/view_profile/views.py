@@ -4,10 +4,20 @@ from selenium import webdriver
 from selenium.webdriver.remote.command import Command
 from django.shortcuts import redirect
 from .forms import ProfileForm
+import json
+
+profile_data_path = r"C:\Users\Thej Venkat\Desktop\Projects\LinkedIn Profile Displayer\linkedin_profile_displayer\profile_data"
 
 def view_profile(request, url):
     url = 'https://www.linkedin.com/in/' + url
     profile = get_all_data(url, driver)
+    # Convert profile dict to json and save it to a file in profile_data_path
+    try:
+        with open(profile_data_path + '\\' + url.split('/')[-1] + '.json', 'w') as f:
+            json.dump(profile, f)
+    except:
+        pass
+    
     return render(request, 'view_profile.html', {'profile': profile})
 
 driver = None
