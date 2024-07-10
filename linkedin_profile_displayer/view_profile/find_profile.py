@@ -26,9 +26,13 @@ def close_popup():
     
 # Name
 def find_name():
+
     try:
         name = driver.find_element(By.XPATH, '//*[@id="ember38"]/h1').text
+        sleep(5)
         return name
+        
+
     except:
         return None
 
@@ -36,6 +40,7 @@ def find_name():
 def find_tag_line():
     try:
         tag_line = driver.find_element(By.XPATH, '//*[@id="profile-content"]/div/div[2]/div/div/main/section[1]/div[2]/div[2]/div[1]/div[2]').text
+        sleep(5)
         return tag_line
     except:
         return None
@@ -44,7 +49,9 @@ def find_tag_line():
 def find_profile_image():
     try:
         profile_image = driver.find_element(By.CLASS_NAME, 'pv-top-card-profile-picture__image--show').get_attribute('src')
+        sleep(5)
         return profile_image
+    
     except:
         return None
 
@@ -52,15 +59,19 @@ def find_profile_image():
 def find_about():
     try:
         about = driver.find_element(By.XPATH, '//*[@id="profile-content"]/div/div[2]/div/div/main/section[2]/div[3]/div/div/div/span[1]').text
+        sleep(5)
         return about
+        
     except:
         return None
-
+    
 # Location
 def find_location():
     try:
         location = driver.find_element(By.XPATH, '//*[@id="profile-content"]/div/div[2]/div/div/main/section[1]/div[2]/div[2]/div[2]/span[1]').text
+        sleep(5)
         return location.split(', ')
+        
     except:
         return None
 
@@ -70,7 +81,9 @@ def find_languages():
         driver.get(url+'/details/languages/')
         languages = driver.find_elements(By.CLASS_NAME, 'pvs-list__paged-list-item')
         languages = [elem.text for elem in languages]
+        sleep(5)
         return languages
+        
     except:
         return None
 
@@ -80,6 +93,7 @@ def find_experience():
         driver.get(url+'/details/experience/')
         experience = driver.find_elements(By.CLASS_NAME, 'pvs-list__paged-list-item')
         experience = [elem.text for elem in experience]
+        sleep(5)
         return experience
     except:
         return None
@@ -90,6 +104,7 @@ def find_education():
         driver.get(url+'/details/education/')
         education = driver.find_elements(By.CLASS_NAME, 'pvs-list__paged-list-item')
         education = [elem.text for elem in education]
+        sleep(5)
         return education
     except:
         return None
@@ -100,7 +115,9 @@ def find_certifications():
         driver.get(url+'/details/certifications/')
         certifications = driver.find_elements(By.CLASS_NAME, 'pvs-list__paged-list-item')
         certifications = [elem.text for elem in certifications]
+        sleep(5)
         return certifications
+
     except:
         return None
 
@@ -110,7 +127,8 @@ def find_projects():
         driver.get(url+'/details/projects/')
         projects = driver.find_elements(By.CLASS_NAME, 'pvs-list__paged-list-item')
         projects = [elem.text for elem in projects]
-        return projects
+        sleep(5)
+        return projects 
     except:
         return None
 
